@@ -3,62 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Food Selection</title>
+    <title>Food Dates - For Sparshi</title>
     <link rel="stylesheet" href="css/food.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="foodquestion">
-      <b>What food would you like to eat?</b>
-    </div>
+    <div class="container">
+      <div class="content-wrapper">
+        <h1 class="main-title">Where should we eat, Sparshi?</h1>
+        <p class="subtitle">Pick your favorite food date ideas</p>
 
-    <div class="food-selection">
-      <div class="food-item">
-        <img src="food/burgers.jpeg" alt="Burgers, fries and fried chicken" />
-        <label
-          ><input
-            type="checkbox"
-            name="food"
-            value="Burgers, fries and fried chicken"
-          />
-          burgers and fried chicken</label
-        >
-      </div>
-      <div class="food-item">
-        <img src="food/dog.jpeg" alt="dog" />
-        <label
-          ><input type="checkbox" name="food" value="hotdog" /> hotdog</label
-        >
-      </div>
-      <div class="food-item">
-        <img src="food/koreanfood.jpeg" alt="koreanfood" />
-        <label
-          ><input type="checkbox" name="food" value="Korean food" /> korean
-          food</label
-        >
-      </div>
-      <div class="food-item">
-        <img src="food/pasta.jpeg" alt="pasta" />
-        <label><input type="checkbox" name="food" value="pasta" /> pasta</label>
-      </div>
-      <div class="food-item">
-        <img src="food/pizza.jpeg" alt="pizza" />
-        <label><input type="checkbox" name="food" value="pizza" /> pizza</label>
-      </div>
-      <div class="food-item">
-        <img src="food/salad.jpeg" alt="salad" />
-        <label><input type="checkbox" name="food" value="salad" /> salad</label>
-      </div>
-      <div class="food-item">
-        <img src="food/steak.jpeg" alt="steak" />
-        <label><input type="checkbox" name="food" value="steak" /> steak</label>
-      </div>
-      <div class="food-item">
-        <img src="food/sushi.jpeg" alt="sushi" />
-        <label><input type="checkbox" name="food" value="sushi" /> sushi</label>
+        <div class="selection-grid">
+          <div class="selection-card">
+            <div class="card-icon">🍗</div>
+            <h3 class="card-title">KFC Date</h3>
+            <label class="card-checkbox">
+              <input type="checkbox" name="food" value="KFC Date" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+          <div class="selection-card">
+            <div class="card-icon">🍛</div>
+            <h3 class="card-title">Karigari Restaurant Date</h3>
+            <label class="card-checkbox">
+              <input type="checkbox" name="food" value="Karigari Restaurant Date" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+          <div class="selection-card">
+            <div class="card-icon">🫓</div>
+            <h3 class="card-title">Chur Chur Naan Party</h3>
+            <label class="card-checkbox">
+              <input type="checkbox" name="food" value="Chur Chur Naan Party" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+          <div class="selection-card">
+            <div class="card-icon">☕</div>
+            <h3 class="card-title">Fancy Café Date</h3>
+            <label class="card-checkbox">
+              <input type="checkbox" name="food" value="Fancy Café Date" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+          <div class="selection-card">
+            <div class="card-icon">🌮</div>
+            <h3 class="card-title">Street Food Crawl<br/>(Sector 18)</h3>
+            <label class="card-checkbox">
+              <input type="checkbox" name="food" value="Street Food Crawl" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+          <div class="selection-card">
+            <div class="card-icon">🍕</div>
+            <h3 class="card-title">Pizza/Pasta Date</h3>
+            <label class="card-checkbox">
+              <input type="checkbox" name="food" value="Pizza/Pasta Date" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+          <div class="selection-card">
+            <div class="card-icon">🍽️</div>
+            <h3 class="card-title">Fine-Dine Dinner</h3>
+            <label class="card-checkbox">
+              <input type="checkbox" name="food" value="Fine-Dine Dinner" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+
+        <button class="button" onclick="location.href='dessert.html'">
+          Continue to Desserts
+        </button>
       </div>
     </div>
-    <button class="button" onclick="location.href='dessert.html'">
-      Continue Hihihhh... 
-    </button>
+    <footer class="footer">Made with love by Aditya</footer>
   </body>
 </html>

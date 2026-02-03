@@ -3,30 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Be My Valentine</title>
+    <title>For Sparshi - Be My Valentine</title>
     <link rel="stylesheet" href="css/valentine.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="valentineQuestion"><b>Will you be my valentine?</b></div>
-    <button class="answerButton" onclick="location.href='thankyou.html'">
-      Yes
-    </button>
-    <button class="answerButton" id="noButton">I no no wanna o(╥﹏╥)o</button>
-    <br />
-    <img src="please.png" height="498px" width="150px" alt="cat asking question" class="responsive" />
+    <div class="container">
+      <div class="content-wrapper">
+        <div class="header-text">Hey Sparshi,</div>
+        <h1 id="valentineQuestion">Will you be my valentine?</h1>
+        <div class="button-container">
+          <button class="answerButton yes-button" onclick="location.href='thankyou.html'">
+            Yes, of course!
+          </button>
+          <button class="answerButton no-button" id="noButton">Not sure yet...</button>
+        </div>
+        <div class="image-container">
+          <img src="please.png" alt="cat asking question" class="question-image" />
+        </div>
+      </div>
+    </div>
+    <footer class="footer">Made with love by Aditya</footer>
 
     <script>
-      document
-        .getElementById("noButton")
-        .addEventListener("click", function () {
-          var yesButton = document.querySelector(
-            'button[onclick*="thankyou.html"]'
-          );
-          var currentFontSize = parseInt(
-            window.getComputedStyle(yesButton).fontSize
-          );
-          yesButton.style.fontSize = currentFontSize + 10 + "px"; // Increase font size by 5px
-        });
+      document.getElementById("noButton").addEventListener("click", function () {
+        var yesButton = document.querySelector('.yes-button');
+        var currentFontSize = parseInt(window.getComputedStyle(yesButton).fontSize);
+        yesButton.style.fontSize = currentFontSize + 10 + "px";
+
+        var noButton = document.getElementById("noButton");
+        var randomX = Math.random() * (window.innerWidth - 200);
+        var randomY = Math.random() * (window.innerHeight - 100);
+        noButton.style.position = 'absolute';
+        noButton.style.left = randomX + 'px';
+        noButton.style.top = randomY + 'px';
+      });
     </script>
   </body>
 </html>

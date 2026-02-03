@@ -3,75 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Activities</title>
+    <title>Date Ideas - For Sparshi</title>
     <link rel="stylesheet" href="css/activities.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="activityquestion"><b>What are we doing after?</b></div>
-    <div class="activities-selection">
-      <div class="activity-item">
-        <img src="activities/aquarium.jpeg" alt="aquarium" />
-        <label
-          ><input
-            type="checkbox"
-            name="activities"
-            value="aquarium"
-          />aquarium</label
-        >
-      </div>
-      <div class="activity-item">
-        <img src="activities/arcade.jpeg" alt="arcade" />
-        <label
-          ><input
-            type="checkbox"
-            name="activities"
-            value="arcade"
-          />arcade</label
-        >
-      </div>
-      <div class="activity-item">
-        <img src="activities/cinema.jpeg" alt="cinema" />
-        <label
-          ><input
-            type="checkbox"
-            name="activities"
-            value="cinema"
-          />cinema</label
-        >
-      </div>
-      <div class="activity-item">
-        <img src="activities/keramika.jpeg" alt="ceramics" />
-        <label
-          ><input
-            type="checkbox"
-            name="activities"
-            value="ceramics"
-          />ceramics</label
-        >
-      </div>
-      <div class="activity-item">
-        <img src="activities/kunsthalle.jpeg" alt="kunsthalle" />
-        <label
-          ><input
-            type="checkbox"
-            name="activities"
-            value="kunsthalle"
-          />exhibition</label
-        >
-      </div>
-      <div class="activity-item">
-        <img src="activities/park.jpeg" alt="park.jpeg" />
-        <label
-          ><input
-            type="checkbox"
-            name="activities"
-            value="park.jpeg"
-          />park</label
-        >
+    <div class="container">
+      <div class="content-wrapper">
+        <h1 class="main-title">What should we do together?</h1>
+        <p class="subtitle">Pick your favorite date activities, Sparshi</p>
+
+        <div class="selection-grid">
+          <div class="selection-card">
+            <div class="card-icon">🎬</div>
+            <h3 class="card-title">Movie Date</h3>
+            <label class="card-checkbox">
+              <input type="checkbox" name="activities" value="Movie Date" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+          <div class="selection-card">
+            <div class="card-icon">🚗</div>
+            <h3 class="card-title">Long Drive<br/>(Ghummi Ghummi)</h3>
+            <label class="card-checkbox">
+              <input type="checkbox" name="activities" value="Long Drive" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+          <div class="selection-card">
+            <div class="card-icon">🍽️</div>
+            <h3 class="card-title">Dinner Date</h3>
+            <label class="card-checkbox">
+              <input type="checkbox" name="activities" value="Dinner Date" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+          <div class="selection-card">
+            <div class="card-icon">🛍️</div>
+            <h3 class="card-title">Mall Date</h3>
+            <label class="card-checkbox">
+              <input type="checkbox" name="activities" value="Mall Date" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+          <div class="selection-card">
+            <div class="card-icon">🌅</div>
+            <h3 class="card-title">Evening Walk</h3>
+            <label class="card-checkbox">
+              <input type="checkbox" name="activities" value="Evening Walk" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+          <div class="selection-card">
+            <div class="card-icon">🏰</div>
+            <h3 class="card-title">Mini Getaway<br/>(Neemrana/Murthal)</h3>
+            <label class="card-checkbox">
+              <input type="checkbox" name="activities" value="Mini Getaway" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+
+        <button class="button" onclick="location.href='lastpage.html'">
+          See the Final Message
+        </button>
       </div>
     </div>
-    <button class="button" onclick="location.href='lastpage.html'">
-      Last page ... 
-    </button>
+    <footer class="footer">Made with love by Aditya</footer>
   </body>
 </html>

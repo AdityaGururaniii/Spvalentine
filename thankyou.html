@@ -3,21 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thank you</title>
+    <title>Thank You Sparshi</title>
     <link rel="stylesheet" href="css/lastpage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="thankyou"><b>Thank you</b></div>
+    <div class="container">
+      <div class="content-wrapper">
+        <h1 id="thankyou">Yay! Thank you Sparshi!</h1>
+        <p class="subtitle">You just made me the happiest person ever!</p>
 
-    <img height="300px" id="rizz" src="thanks.png" alt="rizzler god" class="responsive" />
-    <br />
-    <audio controls autoplay loop>
-      <source src="congratulations.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
-    <h1>Don't go yet!</h1>
-    <button class="button" onclick="location.href='date.html'">
-      Click me heheehe... 
-    </button>
+        <div class="image-container">
+          <img src="thanks.png" alt="celebration" class="celebration-image" />
+        </div>
+
+        <audio controls autoplay loop class="audio-player">
+          <source src="congratulations.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+
+        <div class="next-section">
+          <h2>Now let's plan our perfect date!</h2>
+          <button class="button" onclick="location.href='date.html'">
+            Let's do this!
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">Made with love by Aditya</footer>
   </body>
 </html>
